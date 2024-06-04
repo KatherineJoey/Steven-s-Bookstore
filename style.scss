@@ -1,0 +1,115 @@
+$header-color: rgb(154, 141, 238);
+$header-padding: 30px;
+$h-fontsize: 35px;
+$header-font: fantasy;
+
+.header {
+    padding: $header-padding;
+    text-align: center;
+    font-size: $h-fontsize;
+    color: $header-color;
+    font-family: $header-font;
+    background-image: url('https://static01.nyt.com/images/2017/05/11/t-magazine/bookstore-slide-2MCD/bookstore-slide-2MCD-superJumbo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    opacity: 0.65;
+}
+
+$note-align: center;
+$note-size: 30px;
+$note-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$note-color: rgb(56, 49, 97);
+$note-padding: 30px;
+
+#check {
+    text-align: $note-align;
+    font-size: $note-size;
+    font-family: $note-font;
+    color: $note-color;
+    padding: $note-padding;
+}
+
+$grid-bckgrnd: #E6E6FA;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 60px;
+    background-color: $grid-bckgrnd;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    max-width: 300px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+$h2txt-color: indigo;
+$ptxt-color: #9370DB;
+$ptxt-size: 20px;
+
+h2 {
+    color: $h2txt-color;
+}
+
+p {
+    color: $ptxt-color;
+    font-size: $ptxt-size;
+}
+
+$fdbk-color: cornflowerblue;
+$fdbk-padding: 10px 20px;
+$fdbk-fontsize: 14px;
+$fdbck-border: 4px;
+
+#feedback {
+    background-color: $fdbk-color;
+    border: none;
+    color: white;
+    padding: $fdbk-padding;
+    text-align: center;
+    text-decoration: none;
+    font-size: $fdbk-fontsize;
+    border-radius: $fdbck-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/*Floating Button*/
+$myBtn-backgrnd: rgb(100, 100, 100);
+
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 18.5%;
+    left: 77.25%;
+    float: right;
+    max-width: 50px;
+    width: 100%;
+    font-size: 12px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: $myBtn-backgrnd;
+    padding: .5px;
+    border-radius: 4px;
+}
+
+/*change color on hover*/
+$hover-color: #7dbbf1;
+
+#myBtn,
+#feedback:hover {
+    background-color: $hover-color;
+}
